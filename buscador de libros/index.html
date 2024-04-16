@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Buscador web </title>
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">  
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+    <h1>Buscador de libros</h1>
+
+    <div class="contenedor">
+
+        
+
+        <form id="buscador">
+            <div class="row">
+                <div class="three columns">
+                    <label for="Categoria">Categoria</label>
+                    <select class="u-full-width" id="Categoria">
+                        <option value="">Seleccione</option>
+                        <option value="Romance">Romance</option>
+                        <option value="Comedia">Comedia</option>
+                        <option value="Fantasia">Fantasia</option>
+                        <option value="Filosofia">Filosofia</option>
+                        <option value="Poesia">Poesia</option>                 
+                    </select>
+                </div>
+                <div class="three columns">
+                    <label for="Nombre del libro">Nombre del libro</label>
+                    <select class="u-full-width" id="NombreLibro">
+                        <option value="">Seleccione</option>
+                        <option value="Orgullo y prejuicio">Orgullo y prejuicio</option>
+                        <option value="El ruiseñor">El ruiseñor</option>
+                        <option value="Edenbrooke">Edenbrooke</option>
+                        <option value="Llamame por tu nombre">Llamame por tu nombre</option>
+                        <option value="Maldito Karma">Maldito Karma</option>
+                        <option value="Reir es la unica salida">Reir es la unica salida</option>
+                        <option value="La conjura de los Necios">La conjura de los Necios</option>
+                        <option value="Memorias de un amante">Memorias de un amante</option>
+                        <option value="El señor de los anillos">El señor de los anillos</option>
+                        <option value="Las cronicas de Narnia">Las cronicas de Narnia</option>
+                        <option value="Harry Potter">Harry Potter</option>
+                        <option value="Crónica del Asesino de Reyes">Crónica del Asesino de Reyes</option>
+                        <option value="Discurso del método"> Discurso del método</option>
+                        <option value="El príncipe">El príncipe</option>
+                        <option value=" El segundo sexo"> El segundo sexo</option>
+                        <option value="EL NACIMIENTO DE LA TRAGEDIA">El nacimiento de la tragedia</option>
+                        <option value="VEINTE POEMAS DE AMOR Y UNA CANCION DESESPERADA">Veinte poemas de amor y una cancion desesperada</option>
+                        <option value="TODAS LAS NOCHES QUE FUIMOS">Todas las noches que fuimos humo </option>
+                        <option value="EL OLVIDO ESTA LLENO DE MEMORIA">El olvido esta lleno de memoria</option>
+                        <option value="EN AGOSTO NOS VEMOS">En agosto nos vemos</option>
+                    
+                  
+                    </select>
+                </div>
+                <div class="three columns">
+                    <label for="minimo">Precio Min</label>
+                    <select class="u-full-width" id="minimo">
+                            <option value="">Seleccione</option>
+                            <option value="15">15</option>
+                            <option value="18">18</option>
+                            <option value="20">20</option>
+                            <option value="13">13</option>
+                            <option value="17">17</option>
+                            <option value="8">8</option>
+                            <option value="80">80</option>
+                            <option value="9">9</option>
+                    </select>
+                </div>
+                <div class="three columns">
+                    <label for="maximo">Precio Max</label>
+                    <select class="u-full-width" id="maximo">
+                    <option value="">Seleccione</option>
+                    <option value="15">15</option>
+                    <option value="18">18</option>
+                    <option value="20">20</option>
+                    <option value="13">13</option>
+                    <option value="17">17</option>
+                    <option value="8">8</option>
+                    <option value="80">80</option>
+                    <option value="9">9</option>
+
+                    </select>
+             
+                </div>
+                <div class="row">
+                    <div class="four columns">
+                        <label for="puertas">Autor</label>
+                        <select class="u-full-width" id="autor">
+                                <option value="">Seleccione</option>
+                                <option value="JANE AUSTEN">JANE AUSTEN</option>
+                                <option value="Kristin Hannah">Kristin Hannah</option>
+                                <option value="JULIANNE DONALDSON">JULIANNE DONALDSON</option>
+                                <option value="DAVID SAFIER">DAVID SAFIER</option>
+                                <option value="JOHN KENNEDY TOOLE">JOHN KENNEDY TOOLE</option>
+                                <option value="J.R.R. TOLKIEN">J.R.R. TOLKIEN</option>
+                                <option value="C.S. LEWIS">C.S. LEWIS</option>
+                                <option value="GABRIEL GARCIA MARQUEZ">GABRIEL GARCIA MARQUEZ</option>
+                                <option value="MARIO BENEDETTI"> MARIO BENEDETTI</option>
+                                <option value="PABLO NERUDA"> PABLO NERUDA</option>
+                        </select>
+                    </div>
+
+                    <div class="four columns">
+                        <label for="Edición">Edición</label>
+                        <select class="u-full-width" id="Edicion">
+                                <option value="">Seleccione</option>
+                                <option value="COLOMBIA, 2017">COLOMBIA, 2017</option>
+                                <option value="BARCELONA, 2017">BARCELONA, 2017</option>
+                                <option value="BARCELONA, 2006">BARCELONA, 2006</option>
+                                <option value="ES, 2021"> ES, 2021</option>
+                                <option value="ES, 2020">ES, 2020 </option>
+                                <option value="Italia 2008">Italia 2008</option>
+                        </select>
+                    </div>
+
+                    <div class="four columns">
+                        <label for="ISBN">ISBN</label>
+                        <form class="u-full-width" id="ISBN">
+                                <label for="ISBN"></label>
+                                <textarea maxlength="20" id="ISBN" class="u-full-width"></textarea>
+                                <p id="textoVal"></p>
+                                <input type="submit" class="button u-full-width button-primary" value="Agregar">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+
+        <h1>Resultados</h1>
+        <div id="resultado"></div>
+    </div>
+
+    <a class="sitio-web"  >ED Tecnica EG</a>
+
+    <script src="js/db.js"></script>
+    <script src="js/buscador.js"></script>
+    
+</body>
+</html>
